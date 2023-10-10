@@ -61,10 +61,10 @@ TODO
 
 ### 設定できるパラメータ
 
-設定できるパラメータは次の３つで、いずれも省略可能です（必須ではありません）。現時点では `target_dir` 以外のパラメータをサポートしていません。
+設定できるパラメータは次の３つで、いずれも省略可能です（必須ではありません）。現時点では `target_dir, config_file` 以外のパラメータをサポートしていません。
 
 |  パラメータ  |  説明  | 利用例 |
 | :---- | :---- | :---- |
 |  `target_dir`  |  ビルド対象があるディレクトリ（未指定の場合は `./` を利用する） | あとで書く | 
-|  `config_file`  |  Configファイル名を指定する（未指定の場合は `config.yml` を利用する） | 未サポート。今後実装されます |
+|  `config_file`  |  Configファイル名を指定する（未指定の場合は `config.yml` を利用する） | `uses: TechBooster/ReVIEW-build-artifact-action@master` に並列して、 `with: {"config_file": "config-ebook.yml"}` を指定する。 |
 | `format` | 出力フォーマットを（PDF,EPUB,HTML）から指定 | 未サポート。今後実装されます |
